@@ -27,11 +27,9 @@ void input(char *a, char *b)
 }
 
 
-//int compare(char a[],char b[])
-
 int compare(char *a, char *b)
 {
-    int flag=0, i=0;  // integer variables declaration
+    int flag=0, i=0;  
 
     for(i=0; a[i] && (a[i] == b[i]); i++);
         int ind_dif = a[i] - b[i] ;
