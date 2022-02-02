@@ -1,0 +1,152 @@
+gcc -g p3original.c
+ ./a.out
+Enter a number:9
+1+2+3+4+5+6+7+8+9 is 45
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x7fe: file p3original.c, line 28.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p3original.c:28
+ gcc -g p4original.c
+ ./a.out
+Enter a number
+9
+Enter the element no 0 of the array
+3
+Enter the element no 1 of the array
+8
+Enter the element no 2 of the array
+6
+Enter the element no 3 of the array
+4
+Enter the element no 4 of the array
+3
+Enter the element no 5 of the array
+7
+Enter the element no 6 of the array
+6
+Enter the element no 7 of the array
+7
+Enter the element no 8 of the array
+6
+The sum of3 + 8 + 6 + 4 + 3 + 7 + 6 + 7 + 6 = 50
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x90c: file p4original.c, line 38.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p4original.c:38
+warning: Source file is more recent than executable.
+38  {
+(gdb) n
+40    n=input();
+(gdb) n
+Enter a number
+9
+41    int a[n];
+(gdb) 
+42    input_array(n,a);
+(gdb) n
+Enter the element no 0 of the array
+8
+Enter the element no 1 of the array
+7
+Enter the element no 2 of the array
+6
+Enter the element no 3 of the array
+5
+Enter the element no 4 of the array
+4
+Enter the element no 5 of the array
+4
+Enter the element no 6 of the array
+ gcc -g p6original.c
+ ./a.out
+Enter a word: run
+Enter a word: ran
+run is greater than ran
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x722: file p6original.c, line 9.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p6original.c:9
+9   {
+(gdb) n
+13    input(a, b);
+(gdb) n
+Enter a word: run
+Enter a word: ran
+14    ans = compare(a, b);
+(gdb) n
+15    output(a, b, ans);
+(gdb) n
+run is greater than ran
+17    return 0;
+(gdb) n
+18  }
+(gdb) n
+__libc_start_main (main=0x556d2f40071a <main>, argc=1, 
+    argv=0x7fff1b2b9b18, init=<optimized out>, 
+    fini=<optimized out>, rtld_fini=<optimized out>, 
+    stack_end=0x7fff1b2b9b08) at ../csu/libc-start.c:344
+344 ../csu/libc-start.c: No such file or directory.
+(gdb) q
+A debugging session is active.
+
+    Inferior 1 [process 162] will be killed.
+
+Quit anyway? (y or n) y
+ 
